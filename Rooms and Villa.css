@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+a:visited{
+    color: violet;
+}
+
+
+body{
+    background: aliceblue; /*Aliceblue ,white, ghostwhite, rgb(244, 248, 253)*/;
+
+}
+
+
+/*Navigation Bar CSS Start here*/
+
+.Company-Logo
+{
+    padding-left :50px;
+}
+
+#navigation-bar{
+    
+    background:rgb(224, 255, 255);
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    position: fixed;
+    width: 100%;
+    font-family: Courgette, tahoma, arial, sans-serif;
+    padding: 5px;
+    z-index: 1;
+}
+
+#Navigation-icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 850px;  
+}
+
+
+#Navigation-icon a{   
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+    font-size: 25px;  
+    transition: transform 1s;  
+}
+
+#Navigation-icon a:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+    border-radius: 5px;
+}
+
+#Navigation-icon a:visited{
+   color: violet;
+}
+
+/*Navigation Bar CSS End here*/
+
+/*Main part start here*/
+#Rooms-Villa-Intro{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 720px;
+    background-image: url("Resources/RoomsandVilla/Images/LarchipelVilla/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+
+#Rooms-Villa-Intro-text{
+    text-align: center;
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+#Rooms-Villa-Intro-text h1{
+    font-family: dancing script, Tahoma, Arial,  sans-serif ;
+    font-size: 250px;
+    color:white;
+   
+}
+/*Main part end here*/
+
+
+
+/*Standard room css , Premier Deluxe Room css, First Class Suite css start here*/
+.Room{
+    margin: 150px auto 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Room-Align-Layout{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto 0;
+    width: 95%;
+    position: relative;
+    
+}
+
+.Room-Align-Layout-Square-Overlay{
+    width: 850px;
+    height: 500px;
+    background: #d2f2ff;
+    position: absolute;
+    bottom: 100px;
+    left:0;
+    z-index: -1;
+}
+
+.Room-Container{  
+
+    width: 750px;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Room-Container-Flexbox-one,
+.Room-Container-Flexbox-two,
+.Larchipel-Villa-Pic-Align-Top-Left,
+.Larchipel-Villa-pic-align-bottom{
+    height: 850px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.Room-Container-Flexbox-one img,
+.Room-Container-Flexbox-two img{
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+
+
+.Room-Container-Flexbox-two,
+.Larchipel-Villa-pic-align-bottom{
+    align-items: flex-start;
+    align-self: flex-end;
+}
+
+.Room-Align-Layout-description{
+    border: 3px solid #04a1df;
+    border-radius: 5px; 
+    background-color: white;
+    justify-items: center;
+    align-self: center;
+    width: 500px;
+    height: fit-content;  
+}
+
+.Room-Align-Layout-description-text h2,
+#Larchipel-Villa h2{
+    font-family: dancing script, Tahoma, Arial, sans-serif ;
+    font-size: 80px;
+    text-align: center; 
+    padding: 20px;  
+}
+
+.Icon-pic-container,
+.Villa-Icon-pic-container{
+    margin: 40px auto 0;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Icon-pic-container img{
+    object-fit:cover;
+
+}
+
+.Icon-pic-container p,
+.Villa-Icon-pic-container p {
+    width: 200px;
+    font-family: Roboto, Tahoma, Arial,  sans-serif ;
+    font-size: 20px;
+
+}
+
+
+
+
+.Room-Align-Layout-Square-Overlay-two{
+    width: 850px;
+    height: 500px;
+    background: #d2f2ff;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    z-index: -1;
+}
+
+
+.Room-Container-Flexbox-one-Right-Aligned,
+.Room-Container-Flexbox-two-Right-Aligned,
+.Larchipel-Villa-Pic-Align-Top-Right{
+    height: 850px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.Room-Container-Flexbox-one-Right-Aligned img,
+.Room-Container-Flexbox-two-Right-Aligned img{
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+
+.Room-Container-Flexbox-one-Right-Aligned{
+    align-items: flex-end;
+    align-self: flex-end;
+}
+/*Standard room css , Premier Deluxe Room css, First Class Suite css end here*/
+
+
+/*The Larchipel Villa Css end here*/
+
+#Larchipel-Villa{
+    margin-top: 150px;
+}
+
+#Larchipel-Villa-Decription-Text{
+    margin: 0 auto 0;
+    width: 500px;
+    border: 3px solid #04a1df;
+    border-radius: 5px; 
+    background-color: white;
+}
+
+#Larchipel-Villa-pic-flexbox{
+    position: relative;
+    margin: 100px auto 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 900px;
+}
+
+#Larchipel-Villa-pic-flexbox img{
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.Larchipel-Villa-pic-align-bottom{   
+    align-items: center;
+}
+
+#Larchipel-Villa-Square-Overlay{
+    position: absolute;
+    bottom: 20px;
+    z-index: -1;
+    background: #d2f2ff;
+    width: 95%;
+    height: 700px;
+}
+
+/*The Larchipel Villa Css end here*/
+
+/*Footer CSS start here*/
+
+#Footer-Flexbox{
+    margin-top: 150px;
+    padding: 20px 0;
+    background-color: #d2f2ff;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a{
+    color: blue;
+    text-decoration: underline;
+}
+
+#Company-Address,
+#Company-Copyright,
+#Company-Logo-For-Footer,
+#Company-Copyright-Text{
+    padding: 20px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    font-family: Roboto, Tahoma, Arial, sans-serif ;
+    font-size: 20px;
+    text-align: center;
+}
+
+#Social-Media-Pic{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*Footer Css end here*/
+
+
+

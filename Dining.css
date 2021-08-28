@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+a:visited{
+    color: violet;
+}
+
+
+body{
+    background: aliceblue; /*Aliceblue ,white, ghostwhite, rgb(244, 248, 253)*/;
+
+}
+
+
+/*Navigation Bar CSS Start here*/
+
+.Company-Logo
+{
+    padding-left :50px;
+}
+
+#navigation-bar{
+    
+    background:rgb(224, 255, 255);
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    position: fixed;
+    width: 100%;
+    font-family: Courgette, tahoma, arial, sans-serif;
+    padding: 5px;
+    z-index: 1;
+}
+
+#Navigation-icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 850px;  
+}
+
+
+#Navigation-icon a{   
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+    font-size: 25px;  
+    transition: transform 1s;  
+}
+
+#Navigation-icon a:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+    border-radius: 5px;
+}
+
+#Navigation-icon a:visited{
+   color: violet;
+}
+
+/*Navigation Bar CSS End here*/
+
+/*Main Css start here*/
+.train {
+    position: relative;
+    height: 720px;
+    width: 100%;
+    background-image: url("Resources/Dining/dining02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#Title {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Title h1 {
+    font-family: dancing script,tahoma, arial, sans-serif;
+    color: white;
+    font-size: 300px;
+}
+/*Main Css end here*/
+
+
+/*Introduction text Css start here*/
+#Introduction-Text {
+    margin-top: 150px;
+}
+
+#Introduction-Text h2 {
+    text-align: center;
+    font-family: Dancing Script, tahoma, arial, sans-serif;
+    font-size: 80px;
+}
+/*Introduction text Css start here*/
+
+
+
+/* Steak-And-Chop , Appetizers , Dessert css start here*/
+.Steak-And-Chop,
+.Appetizers,
+.Desserts {
+    margin: 150px auto 0;
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Appetizers {
+    flex-direction: row-reverse;
+}
+
+
+
+.Steak-And-Chop-Menu-Description-Textbox,
+.Appetizers-Menu-Description-Textbox,
+.Desserts-Menu-Description-Textbox {
+    background-color: white;
+    margin: 10px;
+    width: 440px;
+    height: 540px;
+    border: 3px solid #04a1df;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Steak-And-Chop-Menu-Description-Textbox h4,
+.Appetizers-Menu-Description-Textbox h4,
+.Desserts-Menu-Description-Textbox h4 {
+    font-family: Roboto, tahoma, arial,sans-serif;
+    background-color: rgb(63, 61, 61);
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Steak-And-Chop-Menu-Description-Textbox h5,
+.Appetizers-Menu-Description-Textbox h5,
+.Desserts-Menu-Description-Textbox h5 {
+    font-family: Roboto,tahoma, arial,sans-serif;;
+    font-size: 20px;
+}
+
+.Steak-And-Chop-Menu-Pic-Flexbox,
+.Appetizers-Menu-Pic-Flexbox,
+.Desserts-Menu-Pic-Flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 610px;
+    height: 620px;
+}
+
+.Steak-And-Chop-Menu-Pic-Flexbox img,
+.Appetizers-Menu-Pic-Flexbox img,
+.Desserts-Menu-Pic-Flexbox img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* Steak-And-Chop , Appetizers , Dessert css end here*/
+
+
+/*Footer Css start here*/
+#Footer-Flexbox {
+    margin-top: 150px;
+    padding: 20px 0;
+    background-color: #d2f2ff;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a{
+    color: blue;
+    text-decoration: underline;
+}
+
+#Company-Address,
+#Company-Copyright,
+#Company-Logo-For-Footer,
+#Company-Copyright-Text {
+    padding: 20px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    font-family: Roboto, tahoma, arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#Social-Media-Pic {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*Footer Css end here*/

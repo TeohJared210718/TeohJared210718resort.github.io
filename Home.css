@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+a:visited{
+    color: violet;
+}
+
+
+body{
+    background: aliceblue; /*Aliceblue ,white, ghostwhite, rgb(244, 248, 253)*/;
+
+}
+
+
+/*Navigation Bar CSS Start here*/
+
+.Company-Logo
+{
+    padding-left :50px;
+}
+
+#navigation-bar{   
+    background:rgb(224, 255, 255);
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    position: fixed;
+    width: 100%;
+    font-family: Courgette, tahoma , arial , sans-serif;
+    padding: 5px;
+    z-index: 1;
+}
+
+#Navigation-icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 850px;  
+}
+
+
+#Navigation-icon a{   
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+    font-size: 25px;  
+    transition: transform 1s;  
+}
+
+#Navigation-icon a:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+    border-radius: 5px;
+}
+
+#Navigation-icon a:visited{
+   color: violet;
+}
+
+/*Navigation Bar CSS End here*/
+
+
+
+/*Main start here*/
+
+#Introduction-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 720px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+#Introduction-text-container h1{
+    color: white;
+    font-size: 300px;  
+    font-family: dancing script, tahoma, arial, sans-serif;
+}
+
+#Introduction-text-container p{
+    color: white;
+    font-size: 30px;   
+    font-family: Roboto, tahoma, arial, sans-serif;
+}
+
+#Introduction-Video-background-container{
+    position: relative;
+    width: 100%;
+    height: 720px;
+   
+}
+
+#Video-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    object-fit: cover;
+    z-index: -2;
+
+}
+
+#video-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: #87CEFA;
+    mix-blend-mode: overlay;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/*Main end here*/
+
+/*Special-Activity-part start here*/
+
+#Special-Activity-part{
+    position: relative;
+    margin-top: 150px;
+    width: 95%;   
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#Special-Activity-part-text{
+    width: fit-content;
+    margin: 50px auto ;   
+}
+
+
+
+#Special-Activity-flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Special-Activity-part-text h2{
+    font-family: dancing script, tahoma, arial, sans-serif;
+    text-align: center;
+    font-size: 80px;
+}
+
+#Special-Activity-part-text p{
+    padding-top: 20px;
+    font-family: Roboto, tahoma, arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+.Icon-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 650px;
+    width: 400px;
+}
+
+.Icon-pic-container{   
+    display: flex;
+    align-items:center;
+
+}
+
+.Icon-pic-container p{
+    font-family: Roboto, tahoma, arial, sans-serif;
+    font-size: 20px;
+
+}
+
+.Icon-pic, 
+.Icon-pic-two,
+.Icon-pic-three,
+.Icon-pic-four,
+.Icon-pic-five,
+.Icon-pic-six {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 20px;
+    object-fit: cover;;
+    border: 3px solid rgb(0, 204, 255);
+    border-radius: 50%;
+    
+}
+
+.Icon-pic-two{
+    border: 3px solid rgb(255, 0, 0);
+    
+}
+
+.Icon-pic-three{
+    border: 3px solid rgb(252, 195, 6);
+}
+
+.Icon-pic-four{
+    border: 3px solid rgb(6, 252, 199);
+}
+
+.Icon-pic-five{
+    border: 3px solid rgb(253, 129, 12);
+}
+
+.Icon-pic-six{
+    border: 3px solid rgb(24, 255, 3);
+}
+
+#Special-Activity-Video-container{
+    position: relative;
+    width: 900px;
+    height: 500px;  
+}
+
+#Snorkeling-Video{
+    position: absolute;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    height: 100% ;
+    object-fit: fill;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px rgb(129, 222, 245);
+}
+
+#Special-Activity-Pic-Flexbox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Special-Activity-Pic-Flexbox img{
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px rgb(129, 222, 245);
+}
+
+/*Special-Activity-part end here*/
+
+
+/*The Explore our Room part css start here*/ 
+
+.Featured-Rooms-part{
+    margin-top: 150px;
+    position: relative;
+    width: 95%;   
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#Featured-Rooms-Textbox h2{
+    font-family: dancing script, tahoma, arial, sans-serif;
+    text-align: center;
+    font-size: 80px;
+    
+}
+
+.Room-Click-Icon,
+#Our-Menu-link,
+#Tropical-Luxury-Spa-link{
+    margin: 40px auto 0;
+    padding: 7px;
+    font-family: Roboto, tahoma, arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    border: 3px solid rgb(135, 197, 248);
+    width: fit-content;
+    border-radius: 20px;
+    transition: transform 1s, border-radius 1s;
+}
+
+.Room-Click-Icon:hover,
+#Our-Menu-link:hover,
+#Tropical-Luxury-Spa-link:hover{   
+    transform: scale(1.3);
+    border-radius: 0px;
+
+}
+
+
+
+#Featured-Rooms-box{   
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Featured-Rooms-Pic-Container{
+    width: 400px;
+}
+
+.Featured-Rooms-Pic-Container h3,
+.Our-Menu-Pic-Container h3{
+    font-family: dancing script, tahoma, arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.Featured-Rooms-Pic-Container img{
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgb(129, 222, 245);
+}
+
+/*The Explore our Room part css end here*/ 
+
+
+/*The Larchipel Villa part css start here*/ 
+
+.The-Larchipel-Villa-part{
+    margin-top:150px;
+}
+
+.The-Larchipel-Villa-part h2{
+    text-align: center;
+    font-family: dancing script, tahoma, arial, sans-serif;
+    font-size: 80px
+}
+
+
+#The-Larchipel-Villa-box-one{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 300px;
+    margin: 50px auto 0;
+}
+
+.The-Larchipel-Villa-pic-container img{
+    object-fit: cover;
+    box-shadow: 10px 10px 20px rgb(129, 222, 245);
+    border-radius: 5px;
+}
+
+#The-Larchipel-Villa-box-two{
+    margin: 25px auto 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+}
+/*The Larchipel Villa part css end here*/ 
+
+
+/*Our Menu part css start here*/ /*The Css for the link is combined at line 268 to 269*/
+
+#Our-Menu-part{
+    margin-top: 150px;
+}
+
+#Our-Menu-part h2{
+    text-align: center;
+    font-family: dancing script, tahoma, arial, sans-serif;
+    font-size: 80px;
+}
+
+
+#Our-Menu-Flexbox{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.Our-Menu-Pic-Container img{
+    object-fit: cover;
+    width: 450px;
+    height: 550px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgb(129, 222, 245);
+}
+
+/*Our Menu part css end here*/
+
+
+/*Tropical Spa part css start here*/
+
+#Tropical-Luxury-Spa-part{
+    margin: 200px auto 0;
+    position: relative;
+    width: 100%;
+ 
+}
+
+#Square-overlay{
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+    width: 640px;
+    height: 500px;
+    background: #d2f2ff;
+    z-index: -1;
+}
+
+
+#Tropical-Luxury-Spa-Flexbox-one{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#Tropical-Luxury-Spa-Text-Flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;    
+}
+
+#Tropical-Luxury-Spa-Text h2{
+    padding: 20px 0 20px;
+    font-family: dancing script, tahoma, arial, sans-serif;
+    font-size: 80px;
+}
+
+#Tropical-Luxury-Spa-Text p{
+    padding: 20px 0 20px;
+    font-family: Roboto, tahoma, arial, sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+/*As the margin top 50px is not suitable for the section, I restyle a new one*/
+#Tropical-Luxury-Spa-link{     
+    margin: 20px auto 0;   
+}
+
+
+.Tropical-Luxury-Spa-pic-container img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 10px 10px 20px rgb(129, 222, 245);
+    border-radius: 5px;
+}
+
+#Tropical-Luxury-Spa-Flexbox-two{
+    margin: 50px auto 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Tropical-Luxury-Spa-pic-container-two img{
+    object-fit: cover;
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgb(129, 222, 245);
+
+}
+/*Tropical Spa part css start here*/
+
+
+
+#Footer-Flexbox{
+    margin-top: 200px;
+    padding: 20px 0;
+    background-color: #d2f2ff;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a{
+    color: blue;
+    text-decoration: underline;
+}
+
+#Company-Address,
+#Company-Copyright,
+#Company-Logo-For-Footer,
+#Company-Copyright-Text{
+    padding: 20px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    font-family: Roboto, Tahoma, Arial, sans-serif ;
+    font-size: 20px;
+    text-align: center;
+}
+
+#Social-Media-Pic{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
